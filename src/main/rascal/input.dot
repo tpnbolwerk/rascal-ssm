@@ -1,6 +1,0 @@
-digraph{Init->Started;
-Started->Paused;
-Started->Printing;
-Printing->Started;
-Failed->Init;
-}

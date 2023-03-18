@@ -32,11 +32,6 @@ void view(Machine machine) {
     watch(|project://Rascal/example.sm|, false, f);
 }
 
-void f(LocationChangeEvent e)
-{
-        writeFile(|cwd:///test123.txt|, "something has changed123");
-}
-
 Response (Request) webServer(str svg) {
     // iemand heeft ergens op geklikt:
     Response reply(get(/^\/editor/, parameters=pms)) {
@@ -47,7 +42,7 @@ Response (Request) webServer(str svg) {
 
     // Response reply(get(_))
 
-           writeFile(|cwd:///test2.txt|, "something has changed2");
+     
     // hier sturen we de hele pagina met het plaatje er alvast in
     default Response reply(get(_)) {
         return response(pagina(svg));

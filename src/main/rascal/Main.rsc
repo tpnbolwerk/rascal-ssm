@@ -26,57 +26,31 @@ set[LanguageService] contribs() = {
     }),
 
     lenses(rel[loc src, Command lens] (start[Machine] p) {
-        // watch(|project:///Rascal|, false, f);
-        // watch(p.src, true, watcher(changeEvent(p.src, modified(), file())));
-        return {
+       return {
             <p.src, run (p.top, title="View FSM")>
         };
     }),
-
-    // summarizer(Summary (loc _, start[Machine] p) {
-    //     return unreachable(p.top);
-    // }),
     
     executor(exec)
 };
 
-// LocationChangeEvent watcher (LocationChangeEvent event){
-    // println("change detected");
-    // executor(exec);
-// }
+
 
 value exec(run(Machine p)) {
     try {
-        // watch(|cwd:///|, false, f);
-        // bekijken(vertaal(p));
         view(p);
       
         return ("result": true);
     }
     catch loc src : {
-        // watch(src, false, f);
-        // view(p);
         registerDiagnostics([error("Delen door nul is flauwekul", src)]);
         return ("result": false);
     }
 }
 
-void f(LocationChangeEvent e)
-{
-    println("test");
-}
 
 int main(int testArgument = 0) {
     println("argument: <testArgument>");
- 
-    // start[Machine] myStartMachine = parse(#start[Machine], |project:///example.sm|);
-    // Machine myMachine = myStartMachine.top;
-    // println(myMachine);
-    // println(image(myMachine));
-    // unreachableIds = unreachable(myMachine);
-    // println(unreachableIds);
-    // println(compile(myMachine));
-    // println(graphviz(myMachine));
     registerLanguage(prototype);
     return testArgument;
 }

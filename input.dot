@@ -20,9 +20,11 @@ Printing->Paused [ label="done"];
         
 Printing->Failed [ label="failure"];
         
+Printing->Test [ label="test"];
+        
      
 
-Failed->Init [ label="reset22sfosfewf"];
+Failed->Init [ label="test"];
         
      
     }
