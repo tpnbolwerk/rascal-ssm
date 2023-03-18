@@ -1,5 +1,6 @@
 # rascal-ssm
 Prerequisite:
+* graphviz needs to be installed and on the system path as `dot`
 * vs code
 * rascal plugin for vs code [plugin](https://marketplace.visualstudio.com/items?itemName=usethesource.rascalmpl)
 
