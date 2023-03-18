@@ -1,0 +1,11 @@
+
+
+Init->Started : test;
+
+Started->Paused;
+Started->Printing;
+
+Printing->Started;
+
+Failed->Init;
+    wfeewf

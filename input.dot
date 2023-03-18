@@ -1,0 +1,28 @@
+digraph{
+
+Init->Started [ label="buttonOn"];
+        
+     
+
+Started->Paused [ label="pause"];
+        
+Started->Printing [ label="print"];
+        
+     
+
+Paused->Paused [ label="pause"];
+        
+Paused->Printing [ label="continue"];
+        
+     
+
+Printing->Paused [ label="done"];
+        
+Printing->Failed [ label="failure"];
+        
+     
+
+Failed->Init [ label="reset22sfosfewf"];
+        
+     
+    }
