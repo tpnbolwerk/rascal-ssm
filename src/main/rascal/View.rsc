@@ -29,7 +29,9 @@ str toSVG(Machine machine)
 void view(Machine machine) {
     str svg = toSVG(machine);
     showInteractiveContent(content("callbackid", webServer(svg)));
-    watch(|project://Rascal/example.sm|, false, f);
+    // watch(|project://Rascal/example.sm|, false, void (LocalChangeEvent e){
+// 
+    // });
 }
 
 Response (Request) webServer(str svg) {

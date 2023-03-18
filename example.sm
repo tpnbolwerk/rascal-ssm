@@ -1,18 +1,7 @@
-state Init
-    buttonOn : Started
+state Off
+    buttonOn: On
 
-state Started
-    pause: Paused
-    print: Printing
+state On
+    buttonOff: Off
 
-state Paused
-    pause: Paused
-    continue: Printing
-
-state Printing
-    done: Paused
-    failure: Failed
-    test: Test
-
-state Failed
-    test: Init
+    
