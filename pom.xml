@@ -26,11 +26,17 @@
   </pluginRepositories>
 
   <dependencies>
+    <dependency>  
+        <groupId>org.rascalmpl</groupId>
+        <artifactId>salix-core</artifactId>
+        <version>0.1.0-RC2</version>
+    </dependency>
     <dependency>
       <groupId>org.rascalmpl</groupId>
       <artifactId>rascal</artifactId>
       <version>0.28.2</version>
     </dependency>
+
 </dependencies> 
 
   </dependencies>

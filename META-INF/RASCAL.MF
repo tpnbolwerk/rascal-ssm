@@ -1,4 +1,4 @@
 Manifest-Version: 0.0.1
 Project-Name: Rascal
 Source: src/main/rascal
-Require-Libraries: |lib://rascal-lsp|
+Require-Libraries:  |lib://salix-core|, |lib://rascal-lsp|

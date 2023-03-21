@@ -4,6 +4,7 @@ import Syntax;
 import Analyze;
 import Compile;
 import View;
+import Check;
 
 import IO;
 import ParseTree;
@@ -12,7 +13,7 @@ import util::Reflective;
 import util::IDEServices;
 import util::LanguageServer;
 
-import salix::demo::ide::IDE;
+
 
 PathConfig pcfg = getProjectPathConfig(|project://Rascal|);
 Language prototype = language(pcfg, "SM", "sm", "Main", "contribs");
@@ -30,6 +31,10 @@ set[LanguageService] contribs() = {
             <p.src, run (p.top, title="View FSM")>
         };
     }),
+
+    summarizer(Summary (loc _, start[Machine] p) {
+        return check(p.top);}
+    ),
     
     executor(exec)
 };

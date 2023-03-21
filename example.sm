@@ -3,5 +3,7 @@ state Off
 
 state On
     buttonOff: Off
+    buttonPause: Pause
 
-    
+state Pause
+    buttonOff: On
