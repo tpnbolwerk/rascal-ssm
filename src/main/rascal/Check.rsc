@@ -1,6 +1,7 @@
 module Check
 
 import View;
+import Analyze;
 
 import util::LanguageServer;
 import Syntax;

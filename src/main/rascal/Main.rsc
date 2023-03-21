@@ -2,7 +2,6 @@ module Main
 
 import Syntax;
 import Analyze;
-import Compile;
 import View;
 import Check;
 
@@ -12,8 +11,6 @@ import ParseTree;
 import util::Reflective;
 import util::IDEServices;
 import util::LanguageServer;
-
-
 
 PathConfig pcfg = getProjectPathConfig(|project://Rascal|);
 Language prototype = language(pcfg, "SM", "sm", "Main", "contribs");
@@ -44,18 +41,16 @@ set[LanguageService] contribs() = {
 value exec(run(Machine p)) {
     try {
         view(p);
-      
         return ("result": true);
     }
     catch loc src : {
-        registerDiagnostics([error("Delen door nul is flauwekul", src)]);
+        registerDiagnostics([error("Something went wrong", src)]);
         return ("result": false);
     }
 }
 
 
-int main(int testArgument = 0) {
-    println("argument: <testArgument>");
+int main() {
     registerLanguage(prototype);
-    return testArgument;
+    return 0;
 }

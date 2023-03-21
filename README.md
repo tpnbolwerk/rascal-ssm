@@ -1,4 +1,6 @@
 # rascal-ssm
+
+![Animated preview](live-fsm.gif)
 Prerequisite:
 * graphviz needs to be installed and on the system path as `dot`
 * vs code
@@ -12,5 +14,3 @@ Prerequisite:
 5. Click on View FSM to open a FSM view
 
 ![Preview](preview.PNG)
-
-![Animated preview](live-fsm.gif)

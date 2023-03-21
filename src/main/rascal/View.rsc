@@ -6,7 +6,6 @@ import Compile;
 import Content;
 import IO;
 import util::IDEServices;
-import ValueIO;
 import util::ShellExec;
 
 str toDot(Machine m)=
@@ -29,27 +28,12 @@ str toSVG(Machine machine)
 void view(Machine machine) {
     str svg = toSVG(machine);
     showInteractiveContent(content("callbackid", webServer(svg)));
-    // watch(|project://Rascal/example.sm|, false, void (LocalChangeEvent e){
-// 
-    // });
 }
 
 Response (Request) webServer(str svg) {
-    // iemand heeft ergens op geklikt:
-    Response reply(get(/^\/editor/, parameters=pms)) {
-        // open een editor met de broncode
-        edit(readTextValueString(#loc, pms["src"]));
-        return response("done");
-    }
-
-    // Response reply(get(_))
-
-     
-    // hier sturen we de hele pagina met het plaatje er alvast in
     default Response reply(get(_)) {
         return response(pagina(svg));
     }
-
     return reply;
 }
 

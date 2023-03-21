@@ -6,15 +6,11 @@ Off->On [ label="buttonOn"];
 
 On->Off [ label="buttonOff"];
         
-On->Pause [ label="buttonPause"];
+On->Off [ label="buttonPause"];
         
      
 
-Pause->Off [ label="buttonOff"];
-        
-     
-
-Test->Off [ label="buttonOff"];
+Pause->On [ label="buttonOff"];
         
      
     }
