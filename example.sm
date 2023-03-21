@@ -6,4 +6,7 @@ state On
     buttonPause: Pause
 
 state Pause
-    buttonOff: On
+    buttonOff: Off
+
+state Test
+    buttonOff: Off

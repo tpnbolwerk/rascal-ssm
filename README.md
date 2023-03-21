@@ -12,3 +12,5 @@ Prerequisite:
 5. Click on View FSM to open a FSM view
 
 ![Preview](preview.PNG)
+
+![Animated preview](live-fsm.gif)
