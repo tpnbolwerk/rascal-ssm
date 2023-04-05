@@ -14,11 +14,19 @@ Prerequisite:
 5. Click on View FSM to open a FSM view
 
 ![Preview](preview.PNG)
+
 # Babylon embedded in salix
+
 ![Babylon embedded in salix](babylon-preview.gif)
+
 # Babylon interaction using salix
+
 ![Babylon interaction using salix](babylon-preview2.gif)
+
 # Babylon interaction using salix and IDEservices
+
 ![Babylon interaction using salix and IDEservices](babylon-preview3.gif)
+
 # Babylon interaction using salix and IDEservices with a urdf 
+
 ![Babylon interaction using salix and IDEservices with a urdf viewer](babylon-preview4.gif)
