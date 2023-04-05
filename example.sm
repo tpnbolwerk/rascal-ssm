@@ -3,8 +3,9 @@ state Off
 
 state On
     buttonOff: Off
-    buttonPause: Off
 
 state Pause
-    buttonOff: On
+    on: On
+    off: Off
+
     
