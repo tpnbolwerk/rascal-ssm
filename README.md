@@ -30,3 +30,9 @@ Prerequisite:
 # Babylon interaction using salix and IDEservices with a urdf 
 
 ![Babylon interaction using salix and IDEservices with a urdf viewer](babylon-preview4.gif)
+
+# Changing properties bi-directional visual output
+![Changing properties visual output](working_prototype_change.gif)
+
+# Highlight on hover
+![Babylon interaction using salix and IDEservices with a urdf viewer](highlighting_on_hover.gif)
